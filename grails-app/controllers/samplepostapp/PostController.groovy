@@ -17,6 +17,7 @@ class PostController {
 
 		render( view:'list', model:[posts:Post.list( sort:'lastUpdated', order:'desc')])
 	}
+	//test save
 
 	def save = {
 		def post = loadPost(params.id) 
