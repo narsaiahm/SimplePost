@@ -12,7 +12,7 @@ class PostController {
 		}
 		render(view:'edit', model:[post:post])
 	}
-
+//post added for the list committ
 	def list = {
 
 		render( view:'list', model:[posts:Post.list( sort:'lastUpdated', order:'desc')])
