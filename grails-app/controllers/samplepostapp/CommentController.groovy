@@ -12,7 +12,7 @@ class CommentController {
                         comment:new Comment(),
                         postId:params.id])
     }
-
+//save the post
     def save = {
         def comment = new Comment(params)
         comment.dateCreated = new Date();
